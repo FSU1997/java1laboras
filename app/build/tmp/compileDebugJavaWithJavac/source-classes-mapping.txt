@@ -4,10 +4,9 @@ com/corona/coronazp20/Validation.java
  com.corona.coronazp20.Validation
 com/corona/coronazp20/SearchActivity.java
  com.corona.coronazp20.SearchActivity
-com/corona/coronazp20/register.java
- com.corona.coronazp20.register
- com.corona.coronazp20.register$1
+com/corona/coronazp20/RegisterActivity.java
+ com.corona.coronazp20.RegisterActivity
+ com.corona.coronazp20.RegisterActivity$1
 com/corona/coronazp20/LoginActivity.java
  com.corona.coronazp20.LoginActivity
  com.corona.coronazp20.LoginActivity$1
- com.corona.coronazp20.LoginActivity$2

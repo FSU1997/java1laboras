@@ -9,52 +9,30 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 public class LoginActivity extends AppCompatActivity {
-    private Button button;
 
-            @Override
-            protected void onCreate(Bundle savedInstanceState) {
-                super.onCreate(savedInstanceState);
-                setContentView(R.layout.activity_login);
+    EditText username, password;
+    Button register;
 
-                button = (Button) findViewById(R.id.register);
-                button.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View view) {
-                        openRegister();
-                    }
-                });
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_login);
 
-                final EditText username = findViewById(R.id.username);
+        EditText username = (EditText) findViewById(R.id.username);
+        EditText password = (EditText) findViewById(R.id.password);
 
-                final EditText password = findViewById(R.id.password);
+        Button register = findViewById(R.id.register);
+        register.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Toast.makeText(LoginActivity.this , "Ok",
+                        Toast.LENGTH_LONG).show();
+                Intent goToRegister = new Intent(LoginActivity.this, RegisterActivity.class);
 
-                Button login = findViewById(R.id.login);
+                startActivity(goToRegister);
 
-                login.setOnClickListener(new View.OnClickListener() {
-
-
-            @Override
-            public void onClick(View view) {
-                // čia bus vykdomas kodas, kai paspaudžiamas mygtukas
-                Toast.makeText(LoginActivity.this,
-                        username.getText().toString(),
-                        Toast.LENGTH_SHORT).show();
-
-                username.setError(null);
-                if(Validation.isValidUsername(username.getText().toString())) {
-                    Intent goToSearchActivity = new Intent(LoginActivity.this, SearchActivity.class);
-                    startActivity(goToSearchActivity);
-                } else { // jeigu username neteisingas
-                    username.setError("Error! Wrong username");
-                    username.requestFocus();
-                }
-
+                //LoginActivity.this.startActivity(activityChangeIntent);
             }
         });
 
-    }
-    public void openRegister (){
-        Intent intent = new Intent(LoginActivity.this, register.class);
-        startActivity(intent);
     }
 }

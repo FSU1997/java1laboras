@@ -28,9 +28,9 @@
 19        android:testOnly="true"
 20        android:theme="@style/AppTheme" >
 20-->/home/asdx/Documents/Shule/app kurimas/laboratorinis1/corona/CoronaZP20-1-master/app/src/main/AndroidManifest.xml:11:9-40
-21        <activity android:name="com.corona.coronazp20.register" >
+21        <activity android:name="com.corona.coronazp20.RegisterActivity" >
 21-->/home/asdx/Documents/Shule/app kurimas/laboratorinis1/corona/CoronaZP20-1-master/app/src/main/AndroidManifest.xml:12:9-13:20
-21-->/home/asdx/Documents/Shule/app kurimas/laboratorinis1/corona/CoronaZP20-1-master/app/src/main/AndroidManifest.xml:12:19-43
+21-->/home/asdx/Documents/Shule/app kurimas/laboratorinis1/corona/CoronaZP20-1-master/app/src/main/AndroidManifest.xml:12:19-51
 22        </activity>
 23        <activity android:name="com.corona.coronazp20.SearchActivity" />
 23-->/home/asdx/Documents/Shule/app kurimas/laboratorinis1/corona/CoronaZP20-1-master/app/src/main/AndroidManifest.xml:14:9-52
